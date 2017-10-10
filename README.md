@@ -23,6 +23,13 @@ Yep, this is built to have sensible, safe defaults out of the box. vertcoind JSO
 
 Yep, if there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in `./data/electrumx`, it'll be used instead of generating a new one.
 
+### I don't trust your images, can I build them myself?
+
+Yep, you can build `lukechilds/vertcoind` and `lukechilds/electrumx` yourself here:
+
+https://github.com/lukechilds/docker-vertcoind
+https://github.com/lukechilds/docker-electrumx
+
 ## License
 
 MIT © Luke Childs
