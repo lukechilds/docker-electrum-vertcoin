@@ -1,5 +1,6 @@
 version: "3"
 services:
+
   vertcoind:
     image: lukechilds/vertcoind
     expose:
@@ -8,3 +9,14 @@ services:
       - "8333:8333"
     volumes:
       - ./data/vertcoind:/data
+    command: -rpcuser=electrum -rpcpassword=electrum
+
+  electrumx:
+    image: lukechilds/electrumx
+    ports:
+      - "50002:50002"
+    volumes:
+      - ./data/electrumx:/data
+    environment:
+      - DAEMON_URL=http://electrum:electrum@vertcoind:8332
+      - COIN=Vertcoin
