@@ -14,7 +14,7 @@ services:
   electrumx:
     image: lukechilds/electrumx
     ports:
-      - "50002:50002"
+      - "50002:55002"
     volumes:
       - ./data/electrumx:/data
     environment:
