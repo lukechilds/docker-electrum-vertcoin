@@ -1,0 +1,10 @@
+version: "3"
+services:
+  vertcoind:
+    image: lukechilds/vertcoind
+    expose:
+      - "8332"
+    ports:
+      - "8333:8333"
+    volumes:
+      - ./data/vertcoind:/data
