@@ -27,8 +27,8 @@ Yep, if there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in `./d
 
 Yep, you can build `lukechilds/vertcoind` and `lukechilds/electrumx` yourself here:
 
-https://github.com/lukechilds/docker-vertcoind
-https://github.com/lukechilds/docker-electrumx
+- https://github.com/lukechilds/docker-vertcoind
+- https://github.com/lukechilds/docker-electrumx
 
 ## License
 
