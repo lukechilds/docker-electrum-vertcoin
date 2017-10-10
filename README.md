@@ -19,13 +19,13 @@ All blockchain/vertcoind data will be stored in `./data/vertcoind` and all Elect
 
 Yep, this is built to have sensible, safe defaults out of the box. vertcoind JSON-RPC is only accessible from the ElectrumX container, it's never exposed to the internet, it's not even exposed to localhost. ElectrumX will generate a fresh SSL certificate on first boot and only listen for SSL traffic. Unencrypted traffic will be ignored.
 
-### Can I use an existing SSL certificate?
+### How do I use an existing SSL certificate?
 
-Yep, if there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in `./data/electrumx`, it'll be used instead of generating a new one.
+If there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in `./data/electrumx`, it'll be used instead of generating a new one.
 
-### I don't trust your images, can I build them myself?
+### I don't trust your images, how do I build them myself?
 
-Yep, you can build `lukechilds/vertcoind` and `lukechilds/electrumx` yourself here:
+You can build `lukechilds/vertcoind` and `lukechilds/electrumx` yourself here:
 
 - https://github.com/lukechilds/docker-vertcoind
 - https://github.com/lukechilds/docker-electrumx
