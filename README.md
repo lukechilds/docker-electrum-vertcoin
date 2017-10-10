@@ -19,6 +19,10 @@ All blockchain/vertcoind data will be stored in `./data/vertcoind` and all Elect
 
 Yep, this is built to have sensible, safe defaults out of the box. vertcoind JSON-RPC is only accessible from the ElectrumX container, it's never exposed to the internet, it's not even exposed to localhost. ElectrumX will generate a fresh SSL certificate on first boot and only listen for SSL traffic. Unencrypted traffic will be ignored.
 
+### Can I use an existing SSL certificate?
+
+Yep, if there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in `./data/electrumx`, it'll be used instead of generating a new one.
+
 ## License
 
 MIT © Luke Childs
