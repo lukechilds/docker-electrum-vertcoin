@@ -15,6 +15,10 @@ This will pull the latest version of vertcoind and ElectrumX, start syncing the 
 
 All blockchain/vertcoind data will be stored in ./data/vertcoind and all ElectrumX data will be stored in ./data/electrumx. This is stored on the host machine and mounted on the docker containers as a volume, meaning it will persist across reboots/updates/containers etc.
 
+### Is this secure?
+
+Yep, this is built to have sensible, safe defaults out of the box. vertcoind JSON-RPC is only accessible from the ElectrumX container, it's never exposed to the internet, it's not even exposed to localhost. ElectrumX will generate a fresh SSL certificate on first boot and only listen for SSL traffic. Unencrypted traffic will be ignored.
+
 ## License
 
 MIT © Luke Childs
