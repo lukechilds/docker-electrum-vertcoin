@@ -20,3 +20,4 @@ services:
     environment:
       - DAEMON_URL=http://electrum:electrum@vertcoind:5888
       - COIN=Vertcoin
+      - DONATION_ADDRESS=Vh7P3xQZzQFqsrmQtZr9nZr12rySjos2Sv
